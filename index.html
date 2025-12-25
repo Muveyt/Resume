@@ -3,62 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <title>My resume</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+        #cvBody{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 100px;
+            border: 1px solid grey;
+            padding: 20px 50px 20px 50px;
+        }
+
+        #cvHeading{
+            text-align: center;
+        }
+
+        h3{
+            margin: 0px 0px;
+            font-size: 20px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: lighter;
+            margin-top: 10px;
+        }
+        h2{
+            margin-bottom: 0px;
+        }
+        li{
+            font-weight: lighter;
+        }
+        #deneyimMadde{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(3, auto);
+        }
+        #projeMadde{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(4, auto);
+        }
+        span{
+            font-weight: lighter;
+            font-style:oblique;
+            font-size: 28px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Muvahhid Ali Rekalı</h1>
-    <img src="./images/Vesikalık.jpeg" height="300" alt="Muvahhid Ali Rekalı">
-    <hr/>
-    <h2>Summary</h2>
-    <p>Automation Engineer with 2 years of experience in programming S7 PLCs with LAD and SCL languages.
-    <br/>Directed many logistic automation projects individualy with contented customer feedback.
-    <br/>Eager to improve my programming skills to support company initiatives</p>
+    <div id="cvBody">
+        <div id="cvHeading">
+            <h1>Muvahhid Ali Rekalı | <span>PLC Mühendisi</span></h1>
+            <h4 style="font-size: 20px;">malibekiri@gmail.com | +90 553 771 33 98 | linkedin.com/in/muvahhid-ali-rekalı </h4>
+        </div>
+        <div id="hakkımda">
+            <h2>HAKKIMDA</h2>
+            <hr>
+            <p>Endüstriyel otomasyon, kontrol sistemleri ve proses optimizasyonu konularında uzmanlaşmış, üç yılı aşkın
+               deneyime sahip, sonuç odaklı bir PLC programcısıyım. Siemens ürünleri ile kapsamlı bir şekilde çalışarak çeşitli
+               endüstriyel uygulamalar için güvenilir kontrol çözümleri geliştirdim ve entegre ettim. Ayrıca, JavaScript, React ve
+               Node.js'de kendi geliştirdiğim tam yığın programlama becerilerim sayesinde, donanım ve yazılım teknolojilerini
+               birleştiren daha akıllı ve bağlantılı otomasyon sistemleri oluşturmaya olanak tanıyorum.</p>
+        </div>
+
+        <div id="deneyim">
+            <h2>DENEYİM</h2>
+            <hr>
+            <div id="deneyimMadde">
+                <div>
+                <h3>2023/07-2025/01</h3>
+                </div>
+                
+                <div style="margin-left: 150px;">
+                <h3>PM Otomasyon | <span style="font-size: 20px;">Otomasyon Mühendisi</span>
+                <ul>
+                    <li>Simatic S7 kullanarak üretim süreçleri için otomasyon sistemleri tasarlamak,
+                        geliştirmek ve devreye almak üzere 3 kişilik bir ekipte çalıştım böylece sorunsuz
+                        entegrasyon ve minimum kesinti süresi sağladım.
+                    </li>
+                    <li>Karmaşık üretim süreçlerini görselleştirmek ve kontrol etmek, kullanıcı
+                        etkileşimini ve süreç izlemeyi geliştirmek için verimli, kullanıcı dostu HMI
+                        arayüzleri oluşturdum.
+                    </li>
+                    <li>Devreye aldığım projeler ile toplam 300,000€ değerinden fazla kazanç ve
+                        projelerin tamamlanmasında %30’a yakın hız kazandırdım.
+                    </li>
+                </ul>
+                </div>
+
+                <div>
+                <h3>2023/04-2023/07 </h3>
+                </div>
+                
+                <div style="margin-left: 150px;">
+                <h3>Okosis | <span style="font-size: 20px;">Front-End (Staj)</span>
+                <ul>
+                    <li>Üretim sahasından alınan verilerin okunmasını ve sahada gerçek zamanlı izleme
+                        otomasyon sürecinin gerçekleştirilmesini sağlayacak bir web sitesi tasarlandı.
+                    </li>
+                    <li>Siemens S7-1500 kullanarak temel seviyede otomasyon programlaması hakkında
+                        eğitim aldım.
+                    </li>
+                </ul>
+                </div>
+
+                <div>
+                <h3>2023/01-2023/04</h3>
+                </div>
+                
+                <div style="margin-left: 150px;">
+                <h3>PM Otomasyon | <span style="font-size: 20px;">Otomasyon Mühendisi (Staj)</span>
+                <ul>
+                    <li>WinCC kullanarak istenilen metro istasyonlarında eş zamanlı monitörleme imkanı
+                        sağlayan ve istasyonda ki durumuları görselleştiren bir SCADA arayüzü tasarım
+                        projesinde görev aldım.
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="yetenekler">
+            <h2>YETENEKLER</h2>
+            <hr>
+            <p style="font-size: 18px;font-style: normal;"><span style="font-weight: bold;font-size: 20px;font-style: normal;">PLC: </span>Tia-Protal - CodeSys - GMT</p>
+            <p style="font-size: 18px;font-style: normal;"><span style="font-weight: bold;font-size: 20px;font-style: normal;">HMI-SCADA: </span>WinCC - IX Developer - HTP Designer</p>
+            <p style="font-size: 18px;font-style: normal;"><span style="font-weight: bold;font-size: 20px;font-style: normal;">Programlama: </span>C - SCL - ST - LAD</p>
+            <p style="font-size: 18px;font-style: normal;"><span style="font-weight: bold;font-size: 20px;font-style: normal;">Front-End: </span>HTML - CSS - Javascript</p>
+            <p style="font-size: 18px;font-style: normal;"><span style="font-weight: bold;font-size: 20px;font-style: normal;">Back-End: </span>Nodejs - Express.js</p>
+        </div>
+
+        <div id="sertifikalar">
+            <h2>SERTİFİKALAR</h2>
+            <hr>
+            <p style="font-size: 18px;font-style: normal;"><span style="font-weight: bold;font-size: 20px;font-style: normal;">YÖKDİL: </span>75</p>
+        </div>
+
+        <div id="projeler">
+            <h2>PROJELER</h2>
+            <hr>
+
+            <div id="projeMadde">
+                <div>
+                    <h3>PM Otomasyon</h3>
+                </div>
+
+                <div style="margin-left: 150px;">
+                    <h3>PAKET ÇEVİRME MAKİNASI</h3>
+                    <ul>
+                        <li>
+                            Gerekli işlemleri sağlamak için odun levha yığınlarının çevirilmesinde rol oynayan
+                            bir projenin devreye alınmasında görev aldım.
+                        </li>
+                        <li>
+                            Projede otomasyon işlemleri için Siemens S7-1214 PLC, Siemens Motor Driver ve
+                            Beijer HMI kullanıldı.
+                        </li>
+                        <li>
+                            Proje içerisinde makinanın PLC yazılımını, HMI tasarımı ve bağlantısını ve
+                            makinanın devreye alınmasını üstlendim.
+                        </li>
+                    </ul>
+                    <h3>PAKET HİZALAMA MAKİNASI (TUBİTAK-ARGE)</h3>
+                    <ul>
+                        <li>
+                            Odun levha üretim fırınlarından çıkarılıp asansöre yüklenilen levhaların düzenli bir
+                            yığın olmasını sağlayacak TUBİTAK onaylı bir AR-GE projesinin devreye alınma
+                            görevini üstlendim.
+                        </li>
+                        <li>
+                            Projede Siemens S7-1214 PLC, Siemens G120 Motor Driver ve HTP HMI kullanıldı.
+                        </li>
+                        <li>
+                            Proje içerisinde makinanın PLC yazılımını, HMI tasarımı ve bağlantısını ve
+                            makinanın devreye alınmasını üstlendim.
+                        </li>
+                    </ul>
+                    <h3>MANİPLATÖR ROBOT KOLU</h3>
+                    <ul>
+                        <li>
+                            İstasyonlar arası ürünleri vakumlayarak ürün dağıtımı yapabilen bir maniplatör kol
+                            programlamada görev aldım.
+                        </li>
+                        <li>
+                            Projede Siemens S7-1214 PLC kullanıldı.
+                        </li>
+                        <li>
+                            Proje içerisinde makinanın PLC yazılımını ve makinanın devreye alınmasını üstlendim.
+                        </li>
+                    </ul>
+                    <h3>KASTAMONU MDF FABRİKASI</h3>
+                    <ul>
+                        <li>
+                            Kastamonu’da kurulacak olan MDF üretim fabrikasında görev aldım.
+                        </li>
+                        <li>
+                            Proje içerisinde PLC’lerin ve yazılımların kurulumunu, IP atamalarını, ekipmanların
+                            listelenmesinde ve yazılımında asistanlık yaptım.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <hr/>
-    <h2>Work Experience</h2>
-    <ul>
-        <li><h3>Automation Programmer - PM Otomasyon</li></h3>
-            <p>August 2023 - October 2024</p>
-            <li>Planned and implemented automated control systems for manufacturing lines</li>
-            <li>Designed user-friendly and effective HMI panels to control and visualize process.</li>
-            <li>Worked on logistic automation projects and commissioning within a 3-person automation team</li>
-        </li>
-        <li><h3>Front-End Intern - Okosis </h3>
-            <p>July 2023 - October 2023</p>
-            <li>Designed a website to read the data received from the production site </li>
-            <li>Automated manufacturing lines with PLC systems</li>
-        </li>
-    </ul>
-
-    <hr/>
-    <h2>Technologies - Skills</h2>
-    <ul>
-        <h4>PLC</h4>
-        <li>Tia Portal, GMT, IX Developer, HTP Designer </li>
-        <h4>Programming</h4>
-        <li>SCL, LADDER, STL, C</li>
-        <h4>Front-End</h4>
-        <li>HTML, CSS, Jsvascript</li>
-    </ul>
-
-    <hr>
-    <h2>Education</h2>
-    <ul>
-        <li>Bachelor of Electronics and Communication Engineer - University of Yıldız Teknik</li>
-    </ul>
-
-    <hr/>
-    <h2>Portfolio</h2>
-    <a href="./public/Portfolio.html">Check my Portfolio</a>
-
-    <hr/>
-    <h3>Other</h3>
-    <ul>
-        <li><a href="./public/Hobbies.html">Hobbies</a></li>
-        <li><a href="./public/Contact.html">Contact Me</a></li>
-    </ul>
-    <hr/>
 
 </body>
 </html>
-
-
